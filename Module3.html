@@ -1,0 +1,199 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Drop</title>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <style>
+    *{
+      padding:0;
+      margin:0;
+      text-decoration:none;
+      list-style:none;
+      box-sizing:border-box;
+    }
+    body{
+      font-family:montserrat;
+    }
+    nav{
+      background:#0082e6;
+      height:80px;
+      width:100%;
+    }
+    label.logo{
+      color:white;
+      font-size:35px;
+      padding:0 100px;
+      font-weight:bold;
+      line-height:80px;
+    }
+    nav ul{
+      float:right;
+      margin-right:20px;
+
+    }
+    nav ul li{
+      display:inline-block;
+      line-height:80px;
+      margin:0 5px;
+    }
+    nav ul li a{
+      color:white;
+      font-size:17px;
+      padding:7px 13px;
+      border-radius: 3px;
+      text-transform: uppercase;
+    }
+    a.active,a:hover{
+      background-color: #1b9bff;
+      transition:.5s;
+    }
+    b{
+      color:blue;
+      background-color: white;
+    }
+    .checkbtn{
+
+      font-size: 30px;
+      color:white;
+      float:right;
+      line-height: 80px;
+      margin-right: 40px;
+      margin-top: 25px;
+      cursor:pointer;
+      display:none;
+    }
+    #check{
+      display:none;
+    }
+
+    @media(max-width:952px){
+      label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+
+      }
+      nav ul li a{
+        font-size:16px;
+      }
+    }
+      @media(max-width:858px){
+        .checkbtn{
+          display:block;
+        }
+      ul{
+
+        position:fixed;
+        width:300px;
+        height:600px;;
+        background:none;
+        top:80px;
+        left:-100%;
+
+        transition: all .5s;
+        text-align:center;
+      }
+      nav ul li{
+        display:block;
+        margin:50px 0;
+        line-height: 30px;
+
+      }
+      nav ul li a{
+        font-size:20px;
+
+      }
+
+      a:hover,a:active{
+        background:black;
+
+      }
+      #check:checked~ul{
+        left:0;
+
+      }
+    }
+    .row{
+      width:100%;
+    }
+    h1{
+      Text-align:center ;
+      color:white;
+    }
+    p{
+      font-size: 20px;
+      border:1px solid black;
+      Background-color:gray;
+      width:100%;
+
+      height:200px;
+      Margin-right:auto;
+      Margin-left:auto;
+      Font-family:helvetica;
+      color:white;
+      overflow: auto;
+    }
+  #indian{
+background-color: brown;
+Text-align:center;
+}
+
+#chinise{
+background-color: darkorchid;
+Text-align:center;
+}
+
+#maxican{
+background-color:green;
+Text-align:center;
+}
+body{
+  background-color: cyan;
+}
+#container{
+  height: 80px;
+}
+    </style>
+    </head>
+    <body>
+      <div id="container">
+      <nav>
+        <input  type="checkbox" id="check" alt="botton">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">FOOD_LLC</label>
+        <ul>
+          <li><a class="active" href="#indian"><b>INDIAN</b></a></li>
+            <li><a href="#chinise"><b>CHINESE</a></b></li>
+              <li><a href="#mexican"><b>MEXICAN</a></b></li>
+
+                  </ul>
+                  </nav>
+                  <h1> OUR MENU</h1>
+                   <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                     <div id="indian">
+                      <h1> INDIAN</h1>
+                        <a name="#indian"></a>
+                     </div>
+                     <p>INDIAN_Indian cuisine consists of a variety of regional and traditional cuisines native to the Indian subcontinent. Given the diversity in soil, climate, culture, ethnic groups, and occupations, these cuisines vary substantially and use locally available spices, herbs, vegetables, and fruits. Indian food is also heavily influenced by religion, in particular Hinduism, cultural choices and traditions.[1] The cuisine is also influenced by centuries of Islamic rule, particularly the Mughal rule. Samosas and pilafs are examples.</p>
+                    </div>
+                   </div>
+                   <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div id="chinise">
+                      <a name="chinise"></a>
+                      <h1>CHINESE</h1>
+                    </div>
+                    <p>CHINESE_Chinese cuisine is an important part of Chinese culture, which includes cuisine originating from the diverse regions of China, as well as from Overseas Chinese who have settled in other parts of the world. Because of the Chinese diaspora and historical power of the country, Chinese cuisine has influenced many other cuisines in Asia, with modifications made to cater to local palates. Chinese food staples such as rice, soy sauce, noodles, tea, and tofu, and utensils such as chopsticks and the wok, can now be found worldwide.</p>
+                   </div>
+                   <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div id="maxican">
+                        <a name="mexican"></a>
+                      <h1>MEXICAN</h1>
+                    </div>
+                    <p>MAXICAN_Mexican cuisine began about 9,000 years ago, when agricultural communities such as the Maya formed, domesticating maize, creating the standard process of maize nixtamalization, and establishing their foodways. Successive waves of other Mesoamerican groups brought with them their own cooking methods. These included the Olmec, Teotihuacanos, Toltec, Huastec, Zapotec, Mixtec, Otomi, Purépecha, Totonac, Mazatec, Mazahua, and Nahua.</p>
+                   </div>
+                </div>
+        </body>
+        </html>
